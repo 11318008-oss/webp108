@@ -23,6 +23,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -38,6 +39,19 @@
 	height: 50px;
 	width: 1280px;
 }
+.form1{
+	border-radius:5;
+	font-size:24px;
+	margin-top:30px;
+	margin-left:50px;
+	}
+ 
+
+.button{
+	border-radius:10px;
+	font-size:24px;
+	background-color:#39F;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -45,8 +59,61 @@
 
 <body>
 <div id="container">
-  <div id="header"><img src="images/images/BANNER-5.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="header"><img src="images/BANNER-5.jpg" width="1280" height="150" /></div>
+  <div id="article">
+    <form id="form1" name="form1" method="post" action="" class="form1">
+      <p>姓名:
+        <label for="textfield"></label>
+        <input type="text" name="name" id="textfield" />
+      </p>
+      <p>性別；
+        <input type="radio" name="Man" id="radio" value="radio" />
+        男
+        <label for="Man"></label>
+        <input type="radio" name="Woman" id="radio2" value="radio2" />
+        <label for="Woman"></label>
+      女</p>
+      <p>職業:
+        <label for="career"></label>
+        <select name="career" id="career">
+          <option selected="selected">學生</option>
+          <option>商業</option>
+          <option>工業</option>
+          <option>服務業</option>
+          <option>軍公教</option>
+        </select>
+      </p>
+      <p>回覆時間(可複選)
+        <input type="checkbox" name="time1" id="time1" />
+        <label for="time1"></label>
+      早上
+      <input type="checkbox" name="time2" id="time2" />
+      <label for="time2"></label>
+      中午
+      <input type="checkbox" name="time3" id="time3" />
+      <label for="time3"></label>
+      晚上</p>
+      <p>電子郵件
+  <label for="E-mail"></label>
+        <input type="text" name="E-mail" id="E-mail" />
+      </p>
+      <p>填寫日期:
+        <label for="dt"></label>
+        <input type="date" name="dt" id="dt" />
+      </p>
+      <p>詢問內容:
+        <label for="textfield2"></label>
+        <label for="question"></label>
+        <textarea name="question" id="question" cols="45" rows="5"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="button" id="button" value="送出" class="button" />
+        <input type="reset" name="button2" id="button2" value="重設" class="button" />
+        <br />
+      </p>
+    </form>
+    <iframe src="test.html" width="900" height="400" frameborder="0" scrolling="no"></iframe>
+  </div>
   <div id="item">
     <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">嘗食篇</a></li>
@@ -54,10 +121,10 @@
       <li><a href="three.html">觀景篇</a>      </li>
       <li><a href="aboutme.html">關於我</a></li>
       <li><a href="contact.html">與我聯絡</a></li>
-      <li><a href="Untitled-1.html">首頁</a></li>
+       <li><a href="index.html">首頁</a></li>
     </ul>
   </div>
-  <div id="footer"><img src="images/images/FOOTER.jpg" width="1280" height="50" /></div>
+  <div id="footer"><img src="images/FOOTER.jpg" width="1280" height="50" /></div>
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});

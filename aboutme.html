@@ -23,6 +23,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -38,15 +39,100 @@
 	height: 50px;
 	width: 1280px;
 }
+#container #article table {
+	color: #FFF;
+}
+#container #article table tr td {
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+}
+#container #article table tr td p {
+	font-weight: bold;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
-  <div id="header"><img src="images/images/BANNER-4.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="header"><img src="images/BANNER-4.jpg" width="1280" height="150" /></div>
+  <div id="article">
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">        基本資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">設計理念</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <table width="939" height="631" border="0">
+            <tr>
+              <td width="568" rowspan="4" bgcolor="#FFFFCC"><img src="images/57.png" width="565" height="615" alt="57" /></td>
+              <td width="361" height="59" align="center" bgcolor="#FFCC66">個人資料</td>
+            </tr>
+            <tr>
+              <td height="259" bgcolor="#FFFFCC"><p><strong>姓名：梁宛琳</strong><strong> </strong><br />
+                <strong>性別：女</strong><strong> </strong><br />
+                <strong>就讀學校：國立華南高商</strong><strong> </strong><br />
+                <strong>科別：資料處理</strong><strong> </strong><br />
+                <strong>電話：</strong><strong>0985----471</strong><br />
+              <strong>E-Mail</strong><strong>：</strong><strong>11318008@gm.hnvs.cy.edu.tw</strong></p></td>
+            </tr>
+            <tr>
+              <td height="48" align="center" bgcolor="#FFCC99">經歷</td>
+            </tr>
+            <tr>
+              <td height="248" bgcolor="#FFFFCC"><p><strong>高一：</strong><br />
+                  <strong>輔導股長</strong><strong> </strong><br />
+                  <strong>數學小老師</strong><strong> </strong><br />
+                  <strong>藝術小老師</strong><strong> </strong><br />
+                  <strong>國文小老師</strong><strong> </strong><br />
+                  <strong>高二：</strong><strong> </strong><br />
+                  <strong>衛生股長</strong><strong> </strong><br />
+                  <strong>多媒體小老師</strong><strong> </strong><br />
+              <strong>攝影社社長</strong><strong> </strong></p></td>
+            </tr>
+          </table>
+        </div>
+        <table width="926" height="358" border="0">
+          <tr>
+            <td width="920" height="51" align="center" bgcolor="#FFCC66">理念</td>
+          </tr>
+          <tr>
+            <td height="301" bgcolor="#FFFFCC"><p>我的設計理念是來自於我的記憶，因為自己就是嘉義人，因此透過網頁設計的選修課程來介紹自己的家鄉。 </p>
+            <p>在美食、景點、遊樂三個方向下手，介紹我這個在地人所推薦的景物，從嘉義必吃的雞肉飯，再到棒球的發源地嘉義市立棒球場，以及嘉義獨有的阿里山景點，每一樁一件都是我自己感興趣的。 </p>
+            <p>希望藉著這份網站能夠讓更多人瞭解嘉義的特色、文化，從而來這旅遊一趟。</p></td>
+          </tr>
+        </table>
+        <div class="TabbedPanelsContent">
+          <table width="934" height="594" border="0">
+            <tr>
+              <td width="928" height="50" align="center" bgcolor="#FFCC66">這學期學了那些技能？</td>
+            </tr>
+            <tr>
+              <td height="142" bgcolor="#FFFFCC"><p>這學期我學到了如何用Github架網站以及在運用Adobe Photoshop上也更熟練，不管是調整大小還是製作影像都不再像剛開始接觸那樣生疏。 </p><h1>&nbsp;</h1></td>
+            </tr>
+            <tr>
+              <td height="50" align="center" bgcolor="#FF9966">學習過程中遭遇的困難及解決方式？</td>
+            </tr>
+            <tr>
+              <td height="146" bgcolor="#FFFFCC">因為這次是從零開始架設一個新的網站，所以我一直搞不太清楚流程，也常常因為存檔時候的疏忽導致整個版面=都跳掉亂跑，網站中的程式碼也一直跑版，好在後來在老師的幫助下順利跟上進度，存檔的部分也在後來花了一些時間分類，之後每次打開都是順利的了。</td>
+            </tr>
+            <tr>
+              <td height="43" align="center" bgcolor="#FFCC99">獲得哪些能力？</td>
+            </tr>
+            <tr>
+              <td height="149" bgcolor="#FFFFCC">在遇到問題時可以冷靜面對，思考解決方案而不是一味地跳腳。</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="item">
   <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">嘗食篇</a></li>
@@ -54,13 +140,14 @@
       <li><a href="three.html">觀景篇</a>      </li>
       <li><a href="aboutme.html">關於我</a></li>
       <li><a href="contact.html">與我聯絡</a></li>
-      <li><a href="Untitled-1.html">首頁</a></li>
+      <li><a href="index.html">首頁</a></li>
     </ul>
   </div>
-  <div id="footer"><img src="images/images/FOOTER.jpg" width="1280" height="50" /></div>
+  <div id="footer"><img src="images/FOOTER.jpg" width="1280" height="50" /></div>
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1", {defaultTab:2});
 </script>
 </body>
 </html>
